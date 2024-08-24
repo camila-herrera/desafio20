@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './Header';
 import CardPizza from './CardPizza';
 
-function Home() { 
+function Home({ onSelectPizza }) { 
   const [pizzas, setPizzas] = useState([]);  
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -31,12 +31,10 @@ function Home() {
       <div className="card-container">
         {pizzas.map((pizza) => (
           <CardPizza
-            key={pizza.id}
-            foto={pizza.img}
-            titulo={pizza.name}
-            ingredients={pizza.ingredients.join(', ')}
-            valor={pizza.price}
-          />
+          key={pizza.id}
+          pizza={pizza} 
+          onSelectPizza={onSelectPizza}
+        />
         ))}
       </div>
     </div>

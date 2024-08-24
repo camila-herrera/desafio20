@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = ({ onRegisterClick, onHomeClick, onLoginClick, onCartClick, onPizzaClick }) => {
+const Navbar = ({ onRegisterClick, onHomeClick, onLoginClick, onCartClick }) => {
   const total = 25000;
   const token = false;
 
@@ -36,7 +36,7 @@ const Navbar = ({ onRegisterClick, onHomeClick, onLoginClick, onCartClick, onPiz
         )}
       </div>
       <div className="d-grid gap-2 d-md-flex justify-content-md-end">
-        <a href="#" className="btn btn-outline-primary" role="button" data-bs-toggle="button" aria-pressed="true" style={{ fontSize: 'small' }} onClick={onPizzaClick}>
+        <a href="#" className="btn btn-outline-primary" role="button" data-bs-toggle="button" aria-pressed="true" style={{ fontSize: 'small' }} onClick={onCartClick}>
           <img src='carrito-de-compras.png' className='pizzaimg' alt="Cart" />Total: ${total}
         </a>
       </div>

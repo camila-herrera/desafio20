@@ -113,3 +113,24 @@
   width: 100wh;
   height: 90vh;
 }
+.carta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100wh;
+  height: 91vh;
+}
+.carta p{
+  width: 800px;
+  height: auto;
+  
+}
+.carta button{
+  border: none;
+  background-color: #212529;
+  color: white;
+  border-radius: 5%;
+  width: 80px;
+  height: 25px;
+}
