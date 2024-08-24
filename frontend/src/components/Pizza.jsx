@@ -6,7 +6,7 @@ const Pizza = ({ pizza, onBack }) => {
   return (
     <div className='carta'>
       <h2 style={{textTransform: 'uppercase' , fontSize: '40px' }}>{pizza.name}</h2>
-      <img style={{ width: '17rem', margin: '5px', alignItems: 'center' }} src={pizza.img} alt={pizza.name} />
+      <img style={{ width: '22rem', margin: '5px', alignItems: 'center', borderRadius: '5%' }} src={pizza.img} alt={pizza.name} />
       <p>{pizza.desc}</p>
       <p><strong>Ingredientes:</strong> {pizza.ingredients.join(', ')}</p>
       <p style={{ fontSize: '30px' }}><strong>Precio: ${pizza.price}</strong></p>
